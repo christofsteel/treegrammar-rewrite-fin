@@ -1,0 +1,50 @@
+name:                treegrammar-rewrite-fin
+version:             0.1.0.0
+github:              "christofsteel/treegrammar-rewrite-fin"
+license:             Apache2
+author:              "Christoph Stahl"
+maintainer:          "christoph.stahl@tu-dortmund.de"
+copyright:           "2021 Christoph Stahl"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/christofsteel/treegrammar-rewrite-fin#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- contailers
+- unification-fd
+
+library:
+  source-dirs: src
+
+executables:
+  treegrammar-rewrite-fin-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - treegrammar-rewrite-fin
+
+tests:
+  treegrammar-rewrite-fin-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - treegrammar-rewrite-fin
