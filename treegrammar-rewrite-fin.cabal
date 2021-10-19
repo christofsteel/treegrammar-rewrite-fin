@@ -12,7 +12,7 @@ bug-reports:    https://github.com/christofsteel/treegrammar-rewrite-fin/issues
 author:         Christoph Stahl
 maintainer:     christoph.stahl@tu-dortmund.de
 copyright:      2021 Christoph Stahl
-license:        Apache2
+license:        Apache-2.0
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:

@@ -1,7 +1,7 @@
 name:                treegrammar-rewrite-fin
 version:             0.1.0.0
 github:              "christofsteel/treegrammar-rewrite-fin"
-license:             Apache2
+license:             Apache-2.0
 author:              "Christoph Stahl"
 maintainer:          "christoph.stahl@tu-dortmund.de"
 copyright:           "2021 Christoph Stahl"
